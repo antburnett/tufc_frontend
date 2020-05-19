@@ -1,0 +1,23 @@
+{
+  "name": "tufc_frontend_gridsome_wordpress_image_support",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@sendgrid/mail": "^7.1.1",
+    "fs": "0.0.1-security",
+    "gridsome": "^0.7.14",
+    "gridsome-source-wordpress": "^0.4.13"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "gridsome-plugin-tailwindcss": "^2.2.48"
+  }
+}
