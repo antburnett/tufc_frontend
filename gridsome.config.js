@@ -17,28 +17,28 @@ module.exports = {
         typeName: 'Article',
         perPage: 100,
         concurrent: 10,
-        routes: {
-          post: '/:year/:month/:day/:slug',
-          page: '/:slug',
-          post_tag: '/tag/:slug',
-          sponsors: '/sponsors/:slug',
-        },
+        // routes: {
+        //   post: '/:year/:month/:day/:slug',
+        //   page: '/:slug',
+        //   post_tag: '/tag/:slug',
+        //   sponsors: '/sponsors/:slug',
+        // },
         splitPostsIntoFragments: true, // default false
         downloadRemoteImagesFromPosts: true, // default false
         downloadRemoteFeaturedImages: true, // default false
         // downloadACFImages: true, // default false,
-        customEndpoints: [
-          {
-            typeName: 'Posts',
-            route: '/wp/v2/posts',
-            normalize: true,
-          },
-          {
-            typeName: 'Pages',
-            route: '/wp/v2/pages',
-            normalize: true,
-          },
-        ],
+        // customEndpoints: [
+        //   {
+        //     typeName: 'Posts',
+        //     route: '/wp/v2/posts',
+        //     normalize: true,
+        //   },
+        //   {
+        //     typeName: 'Pages',
+        //     route: '/wp/v2/pages',
+        //     normalize: true,
+        //   },
+        // ],
       },
     },
 
@@ -76,8 +76,8 @@ module.exports = {
       },
     },
   ],
-  // templates: {
-  //   ArticlePost: '/mynews/:year/:month/:slug',
-  //   PagePage: '/:slug',
-  // },
+  templates: {
+    ArticlePost: '/news/:year/:month/:slug',
+    ArticlePage: '/random/:slug',
+  },
 };
