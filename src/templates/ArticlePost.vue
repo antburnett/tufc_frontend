@@ -70,5 +70,26 @@ h3 {
 .tufc_content a {
   text-decoration: underline;
 }
+.tufc_content li{
+  list-style-type: disc;
+  padding-bottom: 10px;
+}
+/* SU tables */
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 58rem;
+    width: calc(100% - 4rem);
+}
 
+.su-table-responsive {
+    overflow-x: auto;
+}
+.su-table {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+.entry-content > * {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25em;
+}
 </style>
